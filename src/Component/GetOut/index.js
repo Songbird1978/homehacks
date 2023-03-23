@@ -7,7 +7,7 @@ function GetOut(props) {
 
         <div>
             <Box height={100} />
-            <h1>Get me out!</h1>
+            <h1>Get me outttttttttttttttttt!</h1>
             
         </div>
     )

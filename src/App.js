@@ -1,28 +1,30 @@
 import React from "react";
-// import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom' ;
+import {  Routes, Route } from 'react-router-dom' ;
 import SideBar from "./Component/sidebar";
-// import About from './Component/About';
-// import GetOut from './Component/GetOut';
+import About from './Component/About/';
+import GetOut from './Component/GetOut';
 
 //import './App.css';
 
 
 function App() {
   return (
-    <div>
+    <>
+  <SideBar />
 
-    <SideBar />
     <div className="App">
 
-     We are the three Stooges - this is a test
+     {/* We are the three Stooges - this is a test */}
+    
+    
+    <Routes>
+  
+      <Route path="/"  element={<About />} />
+      <Route path="/about"  element={<About />} />
+      <Route path="/getOut" element={<GetOut />} />
+    </Routes>  
     </div>
-    {/* <Routes>
-      <Route path="/" element={<About />} />
-      <Route path="/GetOut" element={<GetOut />} />
-    </Routes>  */}
-
-
-    </div>
+    </>
   );
 }
 
