@@ -3,18 +3,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Getout from './pages/Getout';
+import Getout from './pages/GetOut';
 import Footer from './components/Footer';
 import Wrapper from './components/Wrapper';
-
-
-
-
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     < Router >
       <div className="App">
+        <Sidebar />
         <Wrapper>
           <Routes>
             <Route path="/" element={<Home />} />
