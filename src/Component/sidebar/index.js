@@ -13,15 +13,6 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-// import ListItem from '@mui/material/ListItem';
-// import ListItemButton from '@mui/material/ListItemButton';
-// import ListItemIcon from '@mui/material/ListItemIcon';
-// import ListItemText from '@mui/material/ListItemText';
-//import { Button } from '@material-ui/core';
-//import InboxIcon from '@mui/icons-material/MoveToInbox';
-//import MailIcon from '@mui/icons-material/Mail';
-// import About from '../About/About';
-// import GetOut from '../GetOut/GetOut';
 import { Link} from 'react-router-dom';
 
 
@@ -81,8 +72,7 @@ function SideBar(props) {
  
     const theme = useTheme();
     const [open, setOpen] = useState(false);
-    // const [menuData, setMenuData] = useState("");
-    //const navigate = useNavigate("");
+
   
     const handleDrawerOpen = () => {
       setOpen(true);
@@ -147,11 +137,6 @@ function SideBar(props) {
           <DrawerHeader />
           
         </Main>
-        {/* <Box >
-            {menuData === 'About' && <About />}
-            {menuData === 'GetOut' && <GetOut />}
-
-        </Box> */}
       </Box>
     );
 }
