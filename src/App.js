@@ -1,8 +1,8 @@
 import React from "react";
 import {  Routes, Route } from 'react-router-dom' ;
 import SideBar from "./Component/sidebar";
-import About from './Component/About/';
-import GetOut from './Component/GetOut';
+import About from './pages/About';
+import GetOut from './pages/GetOut';
 
 //import './App.css';
 
