@@ -7,7 +7,7 @@ import Logo from "../components/Logo";
 function Home() {
   return (
     <div>
-      <Logo>
+      <Logo> We are the 3 stooges
       </Logo>
       <Container style={{ marginTop: 30 }}>
         <Row>

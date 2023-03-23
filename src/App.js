@@ -13,13 +13,12 @@ import Wrapper from './components/Wrapper';
 
 function App() {
   return (
-    <Router>
+    < Router >
       <div className="App">
-     
         <Wrapper>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
+            {/* <Route path="/home" element={<Home />} /> */}
             <Route path="/about" element={<About />} />
             <Route path="/getout" element={<Getout />} />
             <Route path="/contact" element={<Contact />} />
@@ -27,7 +26,7 @@ function App() {
         </Wrapper>
         <Footer />
       </div>
-    </Router>
+    </Router >
   );
 }
 
