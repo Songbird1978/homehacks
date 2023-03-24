@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { Link} from 'react-router-dom';
+import './style.css';
 
 
 const drawerWidth = 240;
@@ -121,15 +122,16 @@ function SideBar(props) {
           </DrawerHeader>
           <Divider />
           {/* this is where the menus start */}
-          {/* menu 1 */}
           <List>
             <nav className='nav'>
-                <CustomLink to="/about">About</CustomLink>
-                <CustomLink to="/getout">Get Out</CustomLink>
+                <CustomLink to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>About</CustomLink>
+                <CustomLink to="/homehacks" style={{ textDecoration: 'none', color: 'inherit' }}>Home Hacks</CustomLink>
+                <CustomLink to="/getout" style={{ textDecoration: 'none', color: 'inherit' }}>Get Out</CustomLink>
+                <CustomLink to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>Contact</CustomLink>
             </nav>
             
           </List>
-          {/* above is were the menus end */}
+          {/* above is where the menus end */}
           
          
         </Drawer>
