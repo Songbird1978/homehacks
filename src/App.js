@@ -1,8 +1,10 @@
 import React from "react";
 import {  Routes, Route } from 'react-router-dom' ;
-import SideBar from "./Component/sidebar";
+import Sidebar from "./Component/sidebar";
 import About from './pages/About';
-import GetOut from './pages/GetOut';
+import Getout from './pages/Getout';
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 //import './App.css';
 
@@ -10,18 +12,14 @@ import GetOut from './pages/GetOut';
 function App() {
   return (
     <>
-  <SideBar />
-
+  <Sidebar />
     <div className="App">
-
-     {/* We are the three Stooges - this is a test */}
-    
-    
     <Routes>
-  
-      <Route path="/"  element={<About />} />
+      <Route path="/"  element={<Home />} />
+      <Route path="/home"  element={<Home />} />
       <Route path="/about"  element={<About />} />
-      <Route path="/getOut" element={<GetOut />} />
+      <Route path="/getout" element={<Getout />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>  
     </div>
     </>
