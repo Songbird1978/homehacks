@@ -2,15 +2,15 @@ import React from 'react';
 import Box from '@mui/material/Box';
 
 
-function Homehacks(props) {
+function Home(props) {
     return (
 
         <div>
             <Box height={50} />
-            <h1>Homehacksssssssssssssssssssss</h1>
+            <h1>Home Pageeeeeeeeeeeeeeeeeeeeee</h1>
             
         </div>
     )
 }
 
-export default Homehacks;
+export default Home;

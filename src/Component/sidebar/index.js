@@ -67,7 +67,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 
 
-function SideBar(props) {
+function Sidebar(props) {
 
     
  
@@ -124,8 +124,8 @@ function SideBar(props) {
           {/* this is where the menus start */}
           <List>
             <nav className='nav'>
+            <CustomLink to="/home" style={{ textDecoration: 'none', color: 'inherit' }}>Home</CustomLink>
                 <CustomLink to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>About</CustomLink>
-                <CustomLink to="/homehacks" style={{ textDecoration: 'none', color: 'inherit' }}>Home Hacks</CustomLink>
                 <CustomLink to="/getout" style={{ textDecoration: 'none', color: 'inherit' }}>Get Out</CustomLink>
                 <CustomLink to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>Contact</CustomLink>
             </nav>
@@ -143,7 +143,7 @@ function SideBar(props) {
     );
 }
 
-export default SideBar ; 
+export default Sidebar ; 
 
 function CustomLink({ to, children, ...props }) {
     const path = window.location.pathname
