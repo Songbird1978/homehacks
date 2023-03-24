@@ -5,11 +5,11 @@ import backgroundImage from '../images/background.jpg';
 import '../Component/grid/style.css';
 
 
-
-function Home(props) {
+function Home() {
     return (
 
         <div>
+
          <Container style={{ backgroundImage:`url(${backgroundImage})`, backgroundSize: 'cover'}}> 
                 <Grid className="gridItem" >
                     <Grid item xs={12} sm={6} md={3}>1</Grid>
@@ -36,6 +36,10 @@ function Home(props) {
                     <h1>Home Page</h1>
                 </Grid>
             </Container>
+
+            <Box height={50} />
+            <h1>Home Pageeeeeeeeeeeeeeeeeeeeee</h1>
+
         </div>
     )
 }
