@@ -32,21 +32,24 @@ function Contact(props) {
           <Stack direction="row" spacing={2}>
       <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
     </Stack>
-    <p><a href={"mailto:ablavisarahsegla@gmail.com"}>Ablavisarahsegla@gmail.com</a></p>
+    <h1>Sarah Segla</h1>
+    <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:ablavisarahsegla@gmail.com"}>Ablavisarahsegla@gmail.com</a></p>
           </Item>
         </Grid>
         <Grid xs>
           <Item><Stack direction="row" spacing={2}>
       <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
     </Stack>
-    <p><a href={"mailto:jmills605@gmail.com"}>Jmills605@gmail.com</a></p>
+    <h1>Joanna Mills</h1>
+    <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:jmills605@gmail.com"}>Jmills605@gmail.com</a></p>
     </Item>
         </Grid>
         <Grid xs>
           <Item><Stack direction="row" spacing={2}>
       <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
     </Stack>
-    <p><a href={"mailto:hayleyalkerpiano@gmail.com"}>Hayleyalkerpiano@gmail.com</a></p>
+    <h1>Hayley Callender</h1>
+    <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:hayleyalkerpiano@gmail.com"}>Hayleyalkerpiano@gmail.com</a></p>
     </Item>
         </Grid>
       </Grid>
