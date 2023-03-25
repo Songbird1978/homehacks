@@ -37,8 +37,7 @@ function Home() {
                 </Grid>
             </Container>
 
-            <Box height={50} />
-            <h1>Home Pageeeeeeeeeeeeeeeeeeeeee</h1>
+      
 
         </div>
     )
