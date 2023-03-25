@@ -31,7 +31,7 @@ function About(props) {
                   <p>Home Hacks cares about the enviroment. We help find cycling routes to help protect biodiversity.
                     Less emissions, noise and air pollution.
                   </p>
-                  <p>(bike pic or icon?)</p>
+                  <p style={{ padding: '100px' }}>(bike pic or icon?)</p>
             </div>
             <div>
             <Box sx={{ flexGrow: 1 }}>
