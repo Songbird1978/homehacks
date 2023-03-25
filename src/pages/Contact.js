@@ -24,7 +24,7 @@ function Contact(props) {
             <div className='about' style={{ textAlign: 'center', color: 'green' }}>
             <h1 style={{ fontSize: '60px', paddingTop: '10px' }}>Our team are here to help</h1>
             </div>
-            <div className='avator'>
+            <div className='avatar'>
             <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid xs>
@@ -32,17 +32,22 @@ function Contact(props) {
           <Stack direction="row" spacing={2}>
       <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
     </Stack>
+    <p><a href={"mailto:ablavisarahsegla@gmail.com"}>Ablavisarahsegla@gmail.com</a></p>
           </Item>
         </Grid>
         <Grid xs>
           <Item><Stack direction="row" spacing={2}>
       <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-    </Stack></Item>
+    </Stack>
+    <p><a href={"mailto:jmills605@gmail.com"}>Jmills605@gmail.com</a></p>
+    </Item>
         </Grid>
         <Grid xs>
           <Item><Stack direction="row" spacing={2}>
       <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
-    </Stack></Item>
+    </Stack>
+    <p><a href={"mailto:hayleyalkerpiano@gmail.com"}>Hayleyalkerpiano@gmail.com</a></p>
+    </Item>
         </Grid>
       </Grid>
     </Box>
