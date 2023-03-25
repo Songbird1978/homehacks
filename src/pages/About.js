@@ -8,8 +8,6 @@ function About(props) {
 
     const Item = styled('div')(({ theme }) => ({
        
-        border: '1px solid',
-        borderColor: theme.palette.mode === 'dark' ? '#444d58' : '#ced7e0',
         padding: theme.spacing(1),
         borderRadius: '4px',
         textAlign: 'center',
