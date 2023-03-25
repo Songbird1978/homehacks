@@ -37,13 +37,22 @@ function About(props) {
             <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid xs>
-          <Item>xs</Item>
+          <Item>
+          <p style={{ paddingBottom: '50px' }}>(icon here)</p>
+            <p>Together we learn interesting facts!</p>
+          </Item>
         </Grid>
         <Grid xs={6}>
-          <Item>xs=6</Item>
+          <Item>
+            <p style={{ paddingBottom: '50px' }}>(icon here)</p>
+            <p>Together we can reduce pollution!</p>
+          </Item>
         </Grid>
         <Grid xs>
-          <Item>xs</Item>
+          <Item>
+          <p style={{ paddingBottom: '50px' }}>(icon here)</p>
+            <p>Together we have a greener lifestyle!</p>
+          </Item>
         </Grid>
       </Grid>
     </Box>
