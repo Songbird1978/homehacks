@@ -22,7 +22,7 @@ function Contact(props) {
 
         <div>
             <div className='about' style={{ textAlign: 'center', color: 'green' }}>
-            <h1 style={{ fontSize: '60px', paddingTop: '10px' }}>Our team are here to help</h1>
+            <h1 style={{ fontSize: '60px', padding: '30px' }}>Our team are here to help</h1>
             </div>
             <div className='avatar'>
             <Box sx={{ flexGrow: 1 }}>
@@ -33,6 +33,7 @@ function Contact(props) {
       <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
     </Stack>
     <h1>Sarah Segla</h1>
+    <p>Portfolio</p>
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Sarahsegla"}> Sarahsegla</a></p>
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:ablavisarahsegla@gmail.com"}>Ablavisarahsegla@gmail.com</a></p>
           </Item>
@@ -42,6 +43,7 @@ function Contact(props) {
       <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
     </Stack>
     <h1>Joanna Mills</h1>
+    <p>Portfolio</p>
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Jojo-Mukeke"}> Jojo-Mukeke</a></p>
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:jmills605@gmail.com"}>Jmills605@gmail.com</a></p>
     </Item>
@@ -51,6 +53,7 @@ function Contact(props) {
       <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
     </Stack>
     <h1>Hayley Callender</h1>
+    <p>Portfolio</p>
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Songbird1978"}> Songbird1978</a></p>
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:hayleyalkerpiano@gmail.com"}>Hayleyalkerpiano@gmail.com</a></p>
     </Item>
