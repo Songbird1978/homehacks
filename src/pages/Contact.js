@@ -2,6 +2,8 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/system/Unstable_Grid';
 import styled from '@mui/system/styled';
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
 
 
 function Contact(props) {
@@ -26,13 +28,21 @@ function Contact(props) {
             <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid xs>
-          <Item>xs</Item>
+          <Item>
+          <Stack direction="row" spacing={2}>
+      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+    </Stack>
+          </Item>
         </Grid>
         <Grid xs>
-          <Item>xs</Item>
+          <Item><Stack direction="row" spacing={2}>
+      <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+    </Stack></Item>
         </Grid>
         <Grid xs>
-          <Item>xs</Item>
+          <Item><Stack direction="row" spacing={2}>
+      <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+    </Stack></Item>
         </Grid>
       </Grid>
     </Box>
