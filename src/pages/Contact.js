@@ -22,9 +22,10 @@ function Contact(props) {
 
         <div>
             <div className='about' style={{ textAlign: 'center', color: 'green' }}>
-            <h1 style={{ fontSize: '60px', padding: '30px' }}>Our team are here to help</h1>
+            <h1 style={{ fontSize: '60px', padding: '10px' }}>Our team are here to help</h1>
+            <p>(contact icon here maybe)</p>
             </div>
-            <div className='avatar'>
+            <div className='avatar'  style={{ padding: '60px' }}>
             <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid xs>
