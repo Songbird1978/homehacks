@@ -1,29 +1,22 @@
-// import { useState, useMemo, useCallback, useRef } from 'react';
-// import {
-//     GoogleMap, 
-//     Marker,
-//     DirectionsRenderer,
-//     Circle, 
-//     MarkerClusterer,
+// import { React } from 'react';
+// import { Box } from 'react';
+// import { GoogleMap } from "@react-google-maps/api";
 
-// } from "@react-google-maps/api";
-// import Place from "./places";
-// import Distance from "./distance";
 
-// const LatlngLiteral = google.maps.LatlngLiteral;
-// const DirectionsResult = google.maps.DirectionsResult;
-// const MapOptions = google.maps.MapOptions;
 
-// export default function Map() {
-//     return <div>Map</div>;
+// function Map() {
+//     return (
 
-// }
+//         <div>
+//             <Box height={100} />
+//             <GoogleMap
+//             zoom={10}
+//             center={{ lat: 44, lng: -80 }}
+//             mapContainerClassName='map-container'>
+//             </GoogleMap>
+            
+//         </div>
+//     );
+//     }
 
-// const defaultOptions =  {
-//     strokeOpacity: 0.5,
-//     strokeWeight: 2,
-//     clickable: false,
-//     draggable: false,
-//     editable: false,
-//     visible: true,
-// };
+//     export default Map ;
