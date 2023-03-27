@@ -1,3 +1,7 @@
 .gridItem {
+    margin-left: 100;
     color: white;
+    align-items: center;
+    justify-items:center;
+    height: 400px;
 }

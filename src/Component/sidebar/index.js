@@ -98,7 +98,7 @@ function Sidebar(props) {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap component="div">
-              Logo me please
+              Homehacks
             </Typography>
           </Toolbar>
         </AppBar>
