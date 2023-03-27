@@ -1,12 +1,11 @@
 import React from "react";
 import ".style.css";
 
-function button() {
-return (
-    <button>
-        button
-    </button>
-);
+function Button (props){
+    console.log(props)
+    const {content, myFunction} = props
+    return(
+        <button onClick={()=> myFunction()}>{content}</button>
+    )
 }
-
-export default button;
+export default Button
