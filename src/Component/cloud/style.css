@@ -1,0 +1,9 @@
+.cloud {
+    background-image: url("../../images/cloud.svg");
+    position:relative;
+    margin-left: 40px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+ 
+}
