@@ -1,6 +1,8 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import { useJsApiLoader, GoogleMap } from "@react-google-maps/api";
+import Button from '@mui/material/Button';
+import {  useRef, useState } from "react";
+import { useJsApiLoader, GoogleMap, Autocomplete, DirectionsRenderer } from "@react-google-maps/api";
 import "../Getout.css";
 
 
@@ -10,33 +12,83 @@ function Getout() {
         libraries: ['places', 'drawing'],
     });
 
+    const [directionRes, setDirectionRes] = useState(null)
+    const [distance, setDistance] = useState('')
+    const [duration, setDuration] = useState('')
+
+    const originRef = useRef()
+
+    const destinationtionRef = useRef()
+
+    const google = window.google;
+
     if (!isLoaded) { return <div><Box height={100} />Loading...</div> }
     return Map();
+
+    async function calculateRoute() {
+        if (originRef.current.value === '' || destinationtionRef.current.value === '') {
+            return
+        }
+         const directionService = new google.maps.DirectionsService()
+         const results = await directionService.route({
+            origin: originRef.current.value,
+            destination: destinationtionRef.current.value,
+            travelMode: google.maps.TravelMode.BICYCLING
+         })
+
+         setDirectionRes(results)
+         setDistance(results.routes[0].legs[0].distance.text)
+         setDuration(results.routes[0].legs[0].duration.text)
+
+        }
+        
+        function clearRoute() {
+            setDirectionRes(null)
+            setDistance('')
+            setDuration('')
+            originRef.current.value = ''
+            destinationtionRef.current.value = ''
+        }
 
     function Map() {
         return (
 
             <div>
                 <Box position="absolute" left={100} top={100} height={100} width={100}>
+                
 
                     <div className={"searchForm"}>
                         <div>
-                            <input type="text" className={"from"} placeholder="Origin"></input>
+                            <Autocomplete>
+                            <input type="text" className={"from"} placeholder="Origin" ref={originRef}></input>
+                            </Autocomplete>
                         </div>
                         <div>
-                            <input type="text" className={"to"} placeholder="Destination"></input>
+                        <Autocomplete>
+                            <input type="text" className={"to"} placeholder="Destination" ref={destinationtionRef}></input>
+                            </Autocomplete>
+                        </div>
+                        <div>
+                            <Button type='submit' onClick={calculateRoute}>
+                                Go
+                            </Button>
+                            <Button  onClick={clearRoute} >
+                                Clear
+                            </Button>
                         </div>
                         <b className={"travelMode"}>Travel by...</b>
                         <select className={"options"}>
-                            <option value="WALKING">Walking</option>
                             <option value="CYCLING">Cycling</option>
                         </select>
+                        <p> Distance: {distance}</p>
+                        <p> Duration: {duration}</p>
                     </div>
                     <GoogleMap className={"Map"}
                         zoom={20}
-                        center={{ lat: 53.5500, lng: 2.4333 }}
+                        center={{ lat: 51.509865, lng: -0.118092 }}
                         mapContainerStyle={{ width: '100vh', height: '100vh' }}
                         options={{ zoomControl: true, streetViewControl: true, mapTypeControl: true, fullscreenControl: false }}>
+                            {directionRes && <DirectionsRenderer directions={directionRes}/>}
                     </GoogleMap>
                 </Box>
             </div>
