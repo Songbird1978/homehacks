@@ -5,6 +5,7 @@ import backgroundImage from '../images/BGI.svg';
 import '../Component/grid/style.css';
 import Logo from '../Component/logo/index.js';
 import Data from '../imageData.json';
+import '../Home.css';
 
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
             <Container style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
                 <Logo className="logo"></Logo>
                 <Grid container className="gridItem" >
-                    <Grid item className="imageData" xs={12} md={6} lg={3}> {
+                    <Grid item xs={12} md={6} lg={3} className="imageData" > {
                         Data && Data.map(dataItem => {
                             return (
                                 <div className="box" >
@@ -23,15 +24,9 @@ function Home() {
                         })
                     }
                     </Grid>
-
                 </Grid>
 
-                <Grid container className="gridItem" >
-                    <Grid item xs={12} md={6} lg={3}>1</Grid>
-                    <Grid item xs={12} md={6} lg={3}>2</Grid>
-                    <Grid item xs={12} md={6} lg={3}>3</Grid>
-                    <Grid item xs={12} md={6} lg={3}>4</Grid>
-                </Grid>
+               
 
                 <Grid container className="gridItem" >
                     <Grid item xs={12} md={6} lg={3}>1</Grid>
