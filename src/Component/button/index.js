@@ -4,10 +4,9 @@ import "./style.css";
 
 
 function Button (props){
-    console.log(props)
-    const {content, myFunction} = props
+   
     return(
-        <button onClick={()=> myFunction()}>{content}</button>
+        <button>Click me</button>
     )
 }
 export default Button
