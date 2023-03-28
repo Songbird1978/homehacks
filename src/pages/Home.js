@@ -13,21 +13,18 @@ function Home() {
         <div>
             <Container style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
                 <Logo className="logo"></Logo>
-                <Grid container className="gridItem" >
-                    <Grid item xs={12} md={6} lg={3} className="imageData" > {
-                        Data && Data.map(dataItem => {
-                            return (
-                                <div className="box" >
-                                    <img src={dataItem.imageUrl} />
-                                </div>
-                            )
-                        })
-                    }
-                    </Grid>
+                
+                <Grid container item  className="imageData" > {
+                    Data && Data.map(dataItem => {
+                        return (
+                            <Grid item xs={12} md={6} lg={3} className="imageData" >
+                                <img src={dataItem.imageUrl} className="image" alt={dataItem.title}/>
+                            </Grid>
+                        )
+                    })
+                }
                 </Grid>
-
-               
-
+        
                 <Grid container className="gridItem" >
                     <Grid item xs={12} md={6} lg={3}>1</Grid>
                     <Grid item xs={12} md={6} lg={3}>2</Grid>
