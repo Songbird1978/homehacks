@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../button";
 
 function Modal (props){
     console.log("modal props")

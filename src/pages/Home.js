@@ -3,9 +3,10 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import backgroundImage from '../images/BGI.svg';
 import '../Component/grid/style.css';
-import Logo from '../Component/logo/index.js';
+import Logo from '../Component/logo';
 import Data from '../imageData.json';
 import '../Home.css';
+import Modal from '../Component/modal/modal'
 
 
 function Home() {
@@ -14,11 +15,13 @@ function Home() {
             <Container style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
                 <Logo className="logo"></Logo>
                 
-                <Grid container item  className="imageData" > {
+                <Grid container item  className="gridContainer" > {
                     Data && Data.map(dataItem => {
                         return (
                             <Grid item xs={12} md={6} lg={3} className="imageData" >
-                                <img src={dataItem.imageUrl} className="image" alt={dataItem.title}/>
+                                <button className="button" onClick={ Modal } >
+                                    <img src={dataItem.imageUrl} className="image" alt={dataItem.title}/>
+                                </button>
                             </Grid>
                         )
                     })
