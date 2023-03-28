@@ -4,20 +4,26 @@ import Container from '@mui/material/Container';
 import backgroundImage from '../images/BGI.svg';
 import '../Component/grid/style.css';
 import Logo from '../Component/logo/index.js';
+import Data from '../imageData.json';
 
 
 function Home() {
     return (
         <div>
-         <Container style={{ backgroundImage:`url(${backgroundImage})`, backgroundSize: 'cover'}}> 
-            <Logo className="logo"></Logo>
-                <Grid className="gridItem" >
-                    <Grid item xs={12} sm={6} md={3}>1</Grid>
-                    <Grid item xs={12} sm={6} md={3}>2</Grid>
-                    <Grid item xs={12} sm={6} md={3}>3</Grid>
-                    <Grid item xs={12} sm={6} md={3}>4</Grid>
+            <Container style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
+                <Logo className="logo"></Logo>
+                <Grid container className="gridItem" >
+                    <Grid item className="imageData" xs={12} md={6} lg={3}> {
+                        Data && Data.map(dataItem => {
+                            return (
+                                <div className="box" >
+                                    <img src={dataItem.imageUrl} />
+                                </div>
+                            )
+                        })
+                    }
+                    </Grid>
 
-                    <h1>Home Page</h1>
                 </Grid>
 
                 <Grid container className="gridItem" >
