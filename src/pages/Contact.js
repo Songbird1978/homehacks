@@ -35,7 +35,6 @@ function Contact() {
       <Avatar alt="" src="../../images/sarah.jpg"/>
     </Stack>
     <h1>Sarah Segla</h1>
-    {/* <p>Portfolio</p> */}
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Sarahsegla"}> Sarahsegla</a></p>
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:ablavisarahsegla@gmail.com"}>Ablavisarahsegla@gmail.com</a></p>
           </Item>
@@ -45,17 +44,15 @@ function Contact() {
       <Avatar alt="" src="../../images/Joanna.png" />
     </Stack>
     <h1>Joanna Mills</h1>
-    {/* <p>Portfolio</p> */}
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Jojo-Mukeke"}> Jojo-Mukeke</a></p>
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:jmills605@gmail.com"}>Jmills605@gmail.com</a></p>
     </Item>
         </Grid>
         <Grid xs>
           <Item><Stack direction="row" spacing={2}>
-      <Avatar alt="" src="/static/images/avatar/3.jpg" />
+      <Avatar alt="" src="../../images/Hayley.jpg" />
     </Stack>
     <h1>Hayley Callender</h1>
-    {/* <p>Portfolio</p> */}
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Songbird1978"}> Songbird1978</a></p>
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:hayleyalkerpiano@gmail.com"}>Hayleyalkerpiano@gmail.com</a></p>
     </Item>
