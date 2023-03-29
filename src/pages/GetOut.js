@@ -9,7 +9,7 @@ import "../Getout.css";
 function Getout() {
     const { isLoaded } = useJsApiLoader({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
-        libraries: ['places', 'drawing'],
+        libraries: ['places'],
     });
 
     const [directionRes, setDirectionRes] = useState(null)
@@ -22,7 +22,7 @@ function Getout() {
 
     const google = window.google;
 
-    if (!isLoaded) { return <div><Box height={100} />Loading...</div> }
+    if (!isLoaded) { return <div><h1>Loading...</h1></div> }
     return Map();
 
     async function calculateRoute() {
@@ -55,6 +55,16 @@ function Getout() {
 
             <div>
                 <Box position="absolute" left={100} top={100} height={100} width={100}>
+                <GoogleMap className={"Map"}
+                        zoom={20}
+                        center={{ lat: 51.509865, lng: -0.118092 }}
+                        mapContainerStyle={{ width: '100vh', height: '100vh' }}
+                        options={{ zoomControl: false, streetViewControl: false, mapTypeControl: false, fullscreenControl: false }}>
+                            {directionRes && <DirectionsRenderer directions={directionRes}/>}
+                            </GoogleMap>
+                </Box>
+                
+                <Box position="absolute" left={100} top={100} height={100} width={100}>
                 
 
                     <div className={"searchForm"}>
@@ -83,14 +93,8 @@ function Getout() {
                         <p> Distance: {distance}</p>
                         <p> Duration: {duration}</p>
                     </div>
-                    <GoogleMap className={"Map"}
-                        zoom={20}
-                        center={{ lat: 51.509865, lng: -0.118092 }}
-                        mapContainerStyle={{ width: '100vh', height: '100vh' }}
-                        options={{ zoomControl: true, streetViewControl: true, mapTypeControl: true, fullscreenControl: false }}>
-                            {directionRes && <DirectionsRenderer directions={directionRes}/>}
-                    </GoogleMap>
-                </Box>
+                    
+                    </Box>
             </div>
         );
     }
