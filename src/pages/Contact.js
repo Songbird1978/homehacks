@@ -4,6 +4,7 @@ import Grid from '@mui/system/Unstable_Grid';
 import styled from '@mui/system/styled';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
+import Diversity3Icon from '@mui/icons-material/Diversity3';
 
 
 function Contact() {
@@ -22,10 +23,10 @@ function Contact() {
 
         <div>
             <div className='about' style={{ textAlign: 'center', color: 'green' }}>
-            <h1 style={{ fontSize: '60px', padding: '10px' }}>Our team are here to help</h1>
-            <p>(contact icon here maybe)</p>
+            <h1 style={{ fontSize: '60px' }}>Our team are here to help</h1>
+            <p><Diversity3Icon style={{ fontSize: '150px' }}/></p>
             </div>
-            <div className='avatar'  style={{ padding: '60px' }}>
+            <div className='avatar'  style={{ padding: '40px' }}>
             <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid xs>
