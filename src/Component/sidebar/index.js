@@ -86,7 +86,7 @@ function Sidebar(props) {
     return (
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
-        <AppBar position="fixed" open={open} style={{backgroundColor: "transparent", color: "green"}}>
+        <AppBar position="fixed" open={open} style={{backgroundColor: "white", color: "green"}}>
           <Toolbar>
             <IconButton
               color="inherit"
