@@ -9,6 +9,7 @@ import backgroundImage from '../images/BGI.svg';
 import '../Component/grid/style.css';
 import Logo from '../Component/logo';
 import RoomIcon from '@mui/icons-material/Room';
+import MyProject from '../imageData.json';
 
 const style = {
     position: 'absolute',
@@ -22,7 +23,7 @@ const style = {
     p: 4,
   };
 
-function Home() {
+function Home(props) {
 
     const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -33,16 +34,14 @@ function Home() {
             <Container style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
             <Logo className="logo"></Logo>
 
-            <Grid container item  className="gridContainer" > 
-                    
-                            <Grid item xs={12} md={6} lg={3} className="imageData" >
-                                
-                                {/* <Modal /> */}
-                            </Grid>
-                     
-                </Grid>
             
-                <Grid container className="gridItem" >
+
+            <div className='inside'>
+{
+    MyProject && MyProject.map( Project => {
+        return(
+            <div className='box' key={ Project.id }>
+                  <Grid container className="gridItem" >
                     <Grid item xs={12} md={5} lg={2}>
                         
                         <Button onClick={handleOpen}><RoomIcon /></Button>
@@ -54,10 +53,10 @@ function Home() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+          { Project.title }
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          { Project.description }
           </Typography>
         </Box>
       </Modal>
@@ -66,18 +65,26 @@ function Home() {
                     <Grid item xs={12} md={6} lg={3}>3</Grid>
                     <Grid item xs={12} md={6} lg={3}>4</Grid>
                 </Grid>
+                </div>
+        )
+    })
+}
+            
+              
                 <Grid container className="gridItem" >
                     <Grid item xs={6} md={1} lg={1}>1</Grid>
 
                 </Grid>
-                <Grid container className="gridItem" >
+                {/* <Grid container className="gridItem" >
                     <Grid item xs={12} md={5} lg={2}></Grid>
                     <Grid item xs={12} md={6} lg={3}>2</Grid>
                     <Grid item xs={4} md={8} lg={3}></Grid>
                     
-                </Grid>
+                </Grid> */}
+                </div >
             </Container>
         </div >
+        
     )
 }
 
