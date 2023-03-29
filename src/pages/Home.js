@@ -23,7 +23,6 @@ function Home() {
             <Container className="bgi" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
                 <Logo className="logo"></Logo>
                
-
                 <Grid container className="gridContainer" spacing={6} >
                     
                     <Grid item xs={6} md={3} lg={3} className="gridItem" >
