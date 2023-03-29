@@ -4,6 +4,7 @@ import Grid from '@mui/system/Unstable_Grid';
 import styled from '@mui/system/styled';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
+import Diversity3Icon from '@mui/icons-material/Diversity3';
 
 
 function Contact() {
@@ -22,39 +23,36 @@ function Contact() {
 
         <div>
             <div className='about' style={{ textAlign: 'center', color: 'green' }}>
-            <h1 style={{ fontSize: '60px', padding: '10px' }}>Our team are here to help</h1>
-            <p>(contact icon here maybe)</p>
+            <h1 style={{ fontSize: '60px' }}>Our team are here to help</h1>
+            <p><Diversity3Icon style={{ fontSize: '150px' }}/></p>
             </div>
-            <div className='avatar'  style={{ padding: '60px' }}>
+            <div className='avatar'  style={{ padding: '40px' }}>
             <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid xs>
           <Item>
           <Stack direction="row" spacing={2}>
-      <Avatar alt="" src="/static/images/avatar/1.jpg" />
+      <Avatar alt="" src="../../images/sarah.jpg"/>
     </Stack>
     <h1>Sarah Segla</h1>
-    <p>Portfolio</p>
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Sarahsegla"}> Sarahsegla</a></p>
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:ablavisarahsegla@gmail.com"}>Ablavisarahsegla@gmail.com</a></p>
           </Item>
         </Grid>
         <Grid xs>
           <Item><Stack direction="row" spacing={2}>
-      <Avatar alt="" src="/static/images/avatar/2.jpg" />
+      <Avatar alt="" src="../../images/Joanna.png" />
     </Stack>
     <h1>Joanna Mills</h1>
-    <p>Portfolio</p>
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Jojo-Mukeke"}> Jojo-Mukeke</a></p>
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:jmills605@gmail.com"}>Jmills605@gmail.com</a></p>
     </Item>
         </Grid>
         <Grid xs>
           <Item><Stack direction="row" spacing={2}>
-      <Avatar alt="" src="/static/images/avatar/3.jpg" />
+      <Avatar alt="" src="../../images/Hayley.jpg" />
     </Stack>
     <h1>Hayley Callender</h1>
-    <p>Portfolio</p>
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Songbird1978"}> Songbird1978</a></p>
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:hayleyalkerpiano@gmail.com"}>Hayleyalkerpiano@gmail.com</a></p>
     </Item>
