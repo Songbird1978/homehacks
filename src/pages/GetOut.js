@@ -6,11 +6,12 @@ import { useJsApiLoader, GoogleMap, Autocomplete, DirectionsRenderer } from "@re
 import "../Getout.css";
 
 
+
 function Getout() {
     const { isLoaded } = useJsApiLoader({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
         libraries: ['places'],
-    });
+    })
 
     const [directionRes, setDirectionRes] = useState(null)
     const [distance, setDistance] = useState('')
