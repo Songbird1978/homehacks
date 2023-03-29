@@ -6,7 +6,7 @@ import '../Component/grid/style.css';
 import Logo from '../Component/logo';
 import Data from '../imageData.json';
 import '../Home.css';
-import Modal from '../Component/modal/modal'
+import Modal from '../Component/modal/modal';
 
 
 function Home() {
@@ -20,8 +20,9 @@ function Home() {
                         return (
                             <Grid item xs={12} md={6} lg={3} className="imageData" >
                                 <button className="button" onClick={ Modal } >
-                                    <img src={dataItem.imageUrl} className="image" alt={dataItem.title}/>
+                                    <img src={dataItem.imageUrl} className="image" alt=""/>
                                 </button>
+                                {/* <Modal /> */}
                             </Grid>
                         )
                     })
