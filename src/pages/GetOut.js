@@ -7,23 +7,23 @@ import "../Getout.css";
 
 
 
-
+// function for getout page. Below have api key
 function Getout() {
     const { isLoaded } = useJsApiLoader({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
         libraries: ['places'],
     })
-
+// use state to get distance and duration
     const [directionRes, setDirectionRes] = useState(null)
     const [distance, setDistance] = useState('')
     const [duration, setDuration] = useState('')
-
+// the starting of journey
     const originRef = useRef()
-
+// end of journy
     const destinationtionRef = useRef()
 
     const google = window.google;
-
+// show loading when is havent loeaded yet
     if (!isLoaded) { return <div><h1>Loading...</h1></div> }
     return Map();
 
@@ -37,7 +37,7 @@ function Getout() {
             destination: destinationtionRef.current.value,
             travelMode: google.maps.TravelMode.BICYCLING
          })
-
+// above is picking cycling way of traveling
          setDirectionRes(results)
          setDistance(results.routes[0].legs[0].distance.text)
          setDuration(results.routes[0].legs[0].duration.text)
@@ -54,7 +54,7 @@ function Getout() {
 
     function Map() {
         return (
-
+// google map. so you could see the map
             <div>
                 <Box position="absolute" left={100} top={100} height={100} width={100}>
                 <GoogleMap className={"Map"}
@@ -68,7 +68,7 @@ function Getout() {
                 
                 <Box position="absolute" left={100} top={100} height={100} width={100}>
                 
-
+{/* added autocomplete when user is typing */}
                     <div className={"searchForm"}>
                         <div>
                             <Autocomplete>

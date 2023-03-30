@@ -1,3 +1,4 @@
+//import
 import React from 'react';
 import { useState } from 'react';
 import { styled, useTheme } from '@mui/material/styles';
@@ -18,7 +19,7 @@ import './style.css';
 
 
 const drawerWidth = 240;
-
+// added styling to the draw
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
     flexGrow: 1,
@@ -37,7 +38,7 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
     }),
   }),
 );
-
+// styling for appbar
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== 'open',
 })(({ theme, open }) => ({
@@ -70,7 +71,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 function Sidebar(props) {
 
     
- 
+ // using usestate for opening
     const theme = useTheme();
     const [open, setOpen] = useState(false);
 
@@ -121,7 +122,7 @@ function Sidebar(props) {
             </IconButton>
           </DrawerHeader>
           <Divider />
-          {/* this is where the menus start */}
+          {/* this is where the menus start. the menu has styling and link to paths */}
           <List>
             <nav className='nav'>
             <CustomLink to="/home" style={{ textDecoration: 'none', color: 'inherit' }}>Home</CustomLink>
@@ -144,7 +145,7 @@ function Sidebar(props) {
 }
 
 export default Sidebar ; 
-
+//  code for the buttons to work. In order to take to the current page in browser. Giving customLink a function
 function CustomLink({ to, children, ...props }) {
     const path = window.location.pathname
 
