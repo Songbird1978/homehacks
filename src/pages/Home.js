@@ -10,6 +10,8 @@ import '../Component/grid/style.css';
 import Logo from '../Component/logo';
 import MyProject from "../imageData.json";
 import '../Home.css';
+import getOutside from "../images/getOutside.jpg";
+import tips from "../images/Tips.jpg";
 
 
 const style = {
@@ -32,20 +34,22 @@ function Home(props) {
         <div>
 
             <Container className="bgi" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "cover", }}>
+                
                 <Logo className="logo"></Logo>
-
+                <img src={tips} alt="tips" className="tips" />  
                 <Grid container className="gridContainer" spacing={6} >
 
                     {MyProject.map((Project) => {
                         return (
 
-                            <Grid item xs={6} md={3} lg={3} className="gridItem" key={Project.id}>
+                            <Grid item xs={12} md={6} lg={3} className="gridItem" key={Project.id}>
                                 <button className="button" onClick={() => {
                                     const newOpen = [...open];
                                     newOpen[Project.id - 1] = true;
                                     setOpen(newOpen)
                                 }}>
                                     <img src={Project.imageUrl} alt={Project.imageName} className={Project.className} />
+                                
                                 </button>
                                 <Modal style={{overflow:'scroll'}}
                                     open={open[Project.id - 1]}
@@ -83,10 +87,11 @@ function Home(props) {
 
                         );
                     })}
-
+               
                 </Grid>
-
+                <img src={getOutside} alt="getOutside" className="getOutside" />  
             </Container>
+         
         </div>
     );
 }
