@@ -40,17 +40,10 @@
     width: 200px;
 }
 
-.container {
-    display: grid;
-    border-radius: 5px;
-    margin-top: 200px;
-    border-style: solid black 2px;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-areas: 
-        "side" "top" "top" "top" 
-        "side" "mid" "mid" "mid"
-        "side" "ground" "ground" "ground"
+.button:hover {
+    opacity: 20%;
+    background-color: white;
+    transition: 0.7s;
 }
 
 .washingMachine {

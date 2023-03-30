@@ -47,7 +47,7 @@ function Home(props) {
                                 }}>
                                     <img src={Project.imageUrl} alt={Project.imageName} className={Project.className} />
                                 </button>
-                                <Modal
+                                <Modal style={{overflow:'scroll'}}
                                     open={open[Project.id - 1]}
                                     onClose={handleClose}
                                     aria-labelledby="modal-modal-title"
@@ -74,6 +74,8 @@ function Home(props) {
                                             {Project.info}
                                         </Typography>
                                         <a href={Project.links}><Button>FIND OUT MORE </Button></a>
+                                        <h6>Copyright : "{Project.copyright}"</h6>
+                                        <img src={Project.imageUrl} alt={Project.imageName} className={Project.className} style={{alignItems: "center" }} />
                                     </Box>
                                 </Modal>
                             </Grid>
