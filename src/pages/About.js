@@ -10,7 +10,7 @@ import Logo from '../Component/logo';
 
 
 function About() {
-
+// styling for box at bottom of page
   const Item = styled('div')(({ theme }) => ({
 
     padding: theme.spacing(1),
@@ -21,7 +21,7 @@ function About() {
 
 
   return (
-
+// first paragrapth
     <div>
       <div className='about' style={{ textAlign: 'center', color: 'green' }}>
         <h1 style={{ fontSize: '60px', paddingTop: '10px' }}>About Us</h1>
@@ -34,6 +34,7 @@ function About() {
         <p>Home Hacks cares about the enviroment. We help find cycling routes to help protect biodiversity.
           Less emissions, noise and air pollution.
         </p>
+        {/* added a bike icon */}
         <p style={{ padding: '60px' }}><DirectionsBikeIcon style={{ fontSize: 200 }}/></p>
       </div>
       <div>
