@@ -34,9 +34,12 @@ function Home(props) {
         <div>
 {/* the background image */}
             <Container className="bgi" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "cover", }}>
+
+
                 {/* logo of homehacks */}
+
                 <Logo className="logo"></Logo>
-                <img src={tips} alt="tips" className="tips" />  
+                <img src={tips} alt="tips" className="tips" />
                 <Grid container className="gridContainer" spacing={6} >
 {/* map though the json */}
                     {MyProject.map((Project) => {
@@ -49,9 +52,9 @@ function Home(props) {
                                     setOpen(newOpen)
                                 }}>
                                     <img src={Project.imageUrl} alt={Project.imageName} className={Project.className} />
-                                
+
                                 </button>
-                                <Modal style={{overflow:'scroll'}}
+                                <Modal style={{ overflow: 'scroll' }}
                                     open={open[Project.id - 1]}
                                     onClose={handleClose}
                                     aria-labelledby="modal-modal-title"
@@ -79,7 +82,7 @@ function Home(props) {
                                         </Typography>
                                         <a href={Project.links}><Button>FIND OUT MORE </Button></a>
                                         <h6>Copyright : "{Project.copyright}"</h6>
-                                        <img src={Project.imageUrl} alt={Project.imageName} className={Project.className} style={{alignItems: "center" }} />
+                                        <img src={Project.imageUrl} alt={Project.imageName} className={Project.className} style={{ alignItems: "center" }} />
                                     </Box>
                                 </Modal>
                             </Grid>
@@ -87,11 +90,11 @@ function Home(props) {
 
                         );
                     })}
-               
+
                 </Grid>
-                <img src={getOutside} alt="getOutside" className="getOutside" />  
+                <img src={getOutside} alt="getOutside" className="getOutside" />
             </Container>
-         
+
         </div>
     );
 }

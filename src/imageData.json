@@ -84,7 +84,7 @@
         "imageUrl": "../images/saveMoney.jpg",
         "imageName": "",
         "copyright": "",
-        "links": "",
+        "links": "https://www.moneysupermarket.com/gas-and-electricity/energy-saving-tips/",
         "className": "saveMoney"
     },
     {
@@ -96,7 +96,7 @@
         "imageUrltwo": "../images/getOuside.jpg",
         "imageName": "bike",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
-        "links": "./Getout.js",
+        "links": "https://homehacks.netlify.app/getout",
         "className": "bike"
     },
     {
