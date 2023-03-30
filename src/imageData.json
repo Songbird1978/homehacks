@@ -1,15 +1,17 @@
 [
-    {   "id": 1,
+    {
+        "id": 1,
         "title": "Washing Machine",
-        "description": "Turning your combi boiler flow temperature down to 60°C could save you up to £100 a year",
-        "info": "Flow temperature is the temperature of the water that your boiler sends to radiators. Reducing flow temperature is not the same as lowering your thermostat and will not noticeably reduce the temperature of your home but may increase the time it takes to reach the target temperature on your thermostat. If you are over 65, or have pre-existing health conditions, you may want to set a slightly higher flow temperature of 65°C to ensure your home warms more quickly.",
+        "description": "There are certain times at which running your washing machine or tumble dryer can be more expensive",
+        "info": "The most expensive time for you to wash or dry your clothes is between 4pm and 7pm, so try to avoid.",
         "imageUrl": "../images/washing-machine-sm.svg",
         "imageName": "Water",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
         "links": "https://www.nesta.org.uk/press-release/government-energy-saving-advice-features-money-saving-boiler-challenge-that-can-save-households-around-112-a-year/",
-        "className": "water"
+        "className": "washingMachine"
     },
-    {   "id": 2,
+    {
+        "id": 2,
         "title": "Water / Boiler",
         "description": "Turning your combi boiler flow temperature down to 60°C could save you up to £100 a year",
         "info": "Flow temperature is the temperature of the water that your boiler sends to radiators. Reducing flow temperature is not the same as lowering your thermostat and will not noticeably reduce the temperature of your home but may increase the time it takes to reach the target temperature on your thermostat. If you are over 65, or have pre-existing health conditions, you may want to set a slightly higher flow temperature of 65°C to ensure your home warms more quickly.",
@@ -28,21 +30,32 @@
         "imageName": "Plug Sockets",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
         "links": "https://www.happyhomesproject.com/search?q=electric%20bills%20&f_collectionId=634eb0385bed7c6ad51dbcda",
-        "className" : "plug"
+        "className": "plug"
     },
     {
         "id": 4,
+        "title": "",
+        "description": "",
+        "info": "",
+        "imageUrl": "",
+        "imageName": "",
+        "copyright": "",
+        "links": "",
+        "className": ""
+    },
+    {
+        "id": 5,
         "title": "Light",
-        "description": "Turning appliances off at the socket could save you up to £70 a year",
-        "info": "Almost all electrical appliances in your home, such as computers, televisions, smart devices and video game consoles, draw power continuously unless unplugged. Turn off the power switch at the socket or unplug appliances from the socket when they are not in use.",
+        "description": "Switch to LED light bulbs",
+        "info": "Traditional bulbs waste a lot of energy. Modern LEDs are the opposite, and also last longer so are less wasteful too. Try to remember to switch lights off when you dont need them.",
         "imageUrl": "../images/lights-sm.svg",
         "imageName": "Light",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
         "links": "https://www.happyhomesproject.com/search?q=electric%20bills%20&f_collectionId=634eb0385bed7c6ad51dbcda",
-        "className" : "light"
+        "className": "light"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Radiators",
         "description": "Turning down radiators in rooms you arent using or use less could save you up to £70 a year",
         "info": "When youre not using rooms, turn radiator valves down to between 2.5 and 3 (roughly 18°C). While you are using a room, increase the temperature to a comfortable level by turning the valve up. Turning off radiators completely in rooms you are not using is less energy efficient as this means your boiler has to work harder to increase the temperature again than if kept at a low setting. People over 65, children under 5 and those with pre-existing health conditions are more vulnerable to cold temperatures. Make sure you are warm enough and have a minimum indoor temperature of 18°C to ensure you protect your health while maintaining comfort.",
@@ -53,7 +66,7 @@
         "className": "radiator"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "Computer",
         "description": "Turning appliances off at the socket could save you up to £70 a year",
         "info": "Almost all electrical appliances in your home, such as computers, televisions, smart devices and video game consoles, draw power continuously unless unplugged. Turn off the power switch at the socket or unplug appliances from the socket when they are not in use.",
@@ -61,21 +74,43 @@
         "imageName": "Computer",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
         "links": "https://www.happyhomesproject.com/search?q=electric%20bills%20&f_collectionId=634eb0385bed7c6ad51dbcda",
-        "className" : "computer"
-    },
-    {
-        "id": 7,
-        "title": "Get Active - Save Money",
-        "description": "Turning appliances off at the socket could save you up to £70 a year",
-        "info": "Almost all electrical appliances in your home, such as computers, televisions, smart devices and video game consoles, draw power continuously unless unplugged. Turn off the power switch at the socket or unplug appliances from the socket when they are not in use.",
-        "imageUrl": "../images/bike-sm.svg",
-        "imageName": "Plug Sockets",
-        "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
-        "links": "https://www.happyhomesproject.com/search?q=electric%20bills%20&f_collectionId=634eb0385bed7c6ad51dbcda",
-        "className" : "bike"
+        "className": "computer"
     },
     {
         "id": 8,
+        "title": "",
+        "description": "",
+        "info": "",
+        "imageUrl": "",
+        "imageName": "",
+        "copyright": "",
+        "links": "",
+        "className": ""
+    },
+    {
+        "id": 9,
+        "title": "Get Active - Save Money",
+        "description": "Running a car costs on average £3,727 per annum; a cycle, however, is just £396, if not less.",
+        "info": "Fuel prices are at an all-time high, representing a significant outlay for car drivers",
+        "imageUrl": "../images/bike-sm.svg",
+        "imageName": "bike",
+        "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
+        "links": "./Getout.js",
+        "className": "bike"
+    },
+    {
+        "id": 10,
+        "title": "Tumble Dryer",
+        "description": "Turning your combi boiler flow temperature down to 60°C could save you up to £100 a year",
+        "info": "Flow temperature is the temperature of the water that your boiler sends to radiators. Reducing flow temperature is not the same as lowering your thermostat and will not noticeably reduce the temperature of your home but may increase the time it takes to reach the target temperature on your thermostat. If you are over 65, or have pre-existing health conditions, you may want to set a slightly higher flow temperature of 65°C to ensure your home warms more quickly.",
+        "imageUrl": "../images/washing-machine-sm.svg",
+        "imageName": "Tumble-Dryer",
+        "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
+        "links": "https://www.nesta.org.uk/press-release/government-energy-saving-advice-features-money-saving-boiler-challenge-that-can-save-households-around-112-a-year/",
+        "className": "washingMachine"
+    },
+    {
+        "id": 11,
         "title": "fridge",
         "description": "Turning appliances off at the socket could save you up to £70 a year",
         "info": "Almost all electrical appliances in your home, such as computers, televisions, smart devices and video game consoles, draw power continuously unless unplugged. Turn off the power switch at the socket or unplug appliances from the socket when they are not in use.",
@@ -83,10 +118,10 @@
         "imageName": "fridge",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
         "links": "https://www.happyhomesproject.com/search?q=electric%20bills%20&f_collectionId=634eb0385bed7c6ad51dbcda",
-        "className" : "fridge"
+        "className": "fridge"
     },
     {
-        "id": 9,
+        "id": 12,
         "title": "kettle",
         "description": "Turning appliances off at the socket could save you up to £70 a year",
         "info": "Almost all electrical appliances in your home, such as computers, televisions, smart devices and video game consoles, draw power continuously unless unplugged. Turn off the power switch at the socket or unplug appliances from the socket when they are not in use.",
@@ -94,7 +129,6 @@
         "imageName": "Plug Sockets",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
         "links": "https://www.happyhomesproject.com/search?q=electric%20bills%20&f_collectionId=634eb0385bed7c6ad51dbcda",
-        "className" : "kettle"
+        "className": "kettle"
     }
-    
-    ]
+]
