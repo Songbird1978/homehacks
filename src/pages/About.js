@@ -6,6 +6,7 @@ import DirectionsBikeIcon from '@mui/icons-material/DirectionsBike';
 import PublicIcon from '@mui/icons-material/Public';
 import GrassIcon from '@mui/icons-material/Grass';
 import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
+import Logo from '../Component/logo';
 
 
 function About() {
@@ -27,7 +28,7 @@ function About() {
         <p> We are Home Hacks!, we help people find out different ways to save money within their houses.</p>
         <p>Find out how much it would cost to use different appliances depending on the time
           and how much energy they're consuming.</p>
-        <p><img alt='logo' src='../../images/logo.svg'></img></p>
+          <Logo className="logo"></Logo>
 
         <h2>That's Not All!</h2>
         <p>Home Hacks cares about the enviroment. We help find cycling routes to help protect biodiversity.
