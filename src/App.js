@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 
 
-//import './App.css';
+// the app function contains all the paths for pages
 
 function App() {
   return (

@@ -8,7 +8,7 @@ import Diversity3Icon from '@mui/icons-material/Diversity3';
 
 
 function Contact() {
-
+// styling for box with group contact infos
     const Item = styled('div')(({ theme }) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
         border: '1px solid',
@@ -32,29 +32,35 @@ function Contact() {
         <Grid xs>
           <Item>
           <Stack direction="row" spacing={2}>
+            {/* added images  */}
       <Avatar alt="" src="../../images/sarah.jpg"/>
     </Stack>
     <h1>Sarah Segla</h1>
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Sarahsegla"}> Sarahsegla</a></p>
+    {/* team email link */}
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:ablavisarahsegla@gmail.com"}>Ablavisarahsegla@gmail.com</a></p>
           </Item>
         </Grid>
         <Grid xs>
           <Item><Stack direction="row" spacing={2}>
+            {/* added images  */}
       <Avatar alt="" src="../../images/Joanna.png" />
     </Stack>
     <h1>Joanna Mills</h1>
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Jojo-Mukeke"}> Jojo-Mukeke</a></p>
+    {/* team email link */}
     <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:jmills605@gmail.com"}>Jmills605@gmail.com</a></p>
     </Item>
         </Grid>
         <Grid xs>
           <Item><Stack direction="row" spacing={2}>
+            {/* added images  */}
       <Avatar alt="" src="../../images/Hayley.jpg" />
     </Stack>
     <h1>Hayley Callender</h1>
     <p>Github:<a style={{ textDecoration: 'none', color: 'green' }} href={"https://github.com/Songbird1978"}> Songbird1978</a></p>
-    <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:hayleyalkerpiano@gmail.com"}>Hayleyalkerpiano@gmail.com</a></p>
+    {/* team email link */}
+    <p><a style={{ textDecoration: 'none', color: 'green' }} href={"mailto:hayleyalkerpiano@gmail.com"}>Hayleyalkerpiano@gmail.com</a></p> 
     </Item>
         </Grid>
       </Grid>

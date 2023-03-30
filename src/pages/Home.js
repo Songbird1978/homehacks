@@ -13,7 +13,7 @@ import '../Home.css';
 import getOutside from "../images/getOutside.jpg";
 import tips from "../images/Tips.jpg";
 
-
+// styling for modal pop up
 const style = {
     position: "absolute",
     top: "50%",
@@ -25,20 +25,20 @@ const style = {
     boxShadow: 24,
     p: 4,
 };
-
+// function for when modal opens and closes
 function Home(props) {
     const [open, setOpen] = React.useState(new Array(MyProject.length).fill(false));
     const handleClose = () => setOpen(new Array(MyProject.length).fill(false));
 
     return (
         <div>
-
+{/* the background image */}
             <Container className="bgi" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "cover", }}>
-                
+                {/* logo of homehacks */}
                 <Logo className="logo"></Logo>
                 <img src={tips} alt="tips" className="tips" />  
                 <Grid container className="gridContainer" spacing={6} >
-
+{/* map though the json */}
                     {MyProject.map((Project) => {
                         return (
 
