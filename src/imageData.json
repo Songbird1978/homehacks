@@ -3,11 +3,11 @@
         "id": 1,
         "title": "Washing Machine",
         "description": "There are certain times at which running your washing machine or tumble dryer can be more expensive",
-        "info": "The most expensive time for you to wash or dry your clothes is between 4pm and 7pm, so try to avoid.",
+        "info": "The most expensive time for you to wash or dry your clothes is between 4pm and 7pm, so try to avoid. You could also try washing less frequently, washing with colder temperature settings and skiping the ironing. SUPERTIP - Nobody likes ironing though do we? ",
         "imageUrl": "../images/washing-machine-sm.svg",
         "imageName": "Water",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
-        "links": "https://www.nesta.org.uk/press-release/government-energy-saving-advice-features-money-saving-boiler-challenge-that-can-save-households-around-112-a-year/",
+        "links": "https://www.express.co.uk/life-style/property/1689638/how-to-save-money-laundry-cheaper-time-to-use-washing-machine",
         "className": "washingMachine"
     },
     {
@@ -25,33 +25,33 @@
         "id": 3,
         "title": "Plug Sockets",
         "description": "Turning appliances off at the socket could save you up to £70 a year",
-        "info": "Almost all electrical appliances in your home, such as computers, televisions, smart devices and video game consoles, draw power continuously unless unplugged. Turn off the power switch at the socket or unplug appliances from the socket when they are not in use.",
+        "info": "Almost all electrical appliances in your home, such as computers, televisions, smart devices and video game consoles, draw power continuously unless unplugged. Leaving devices on standby could be costing you more money. Turn off the power switch at the socket or unplug appliances from the socket when they are not in use.",
         "imageUrl": "../images/plug-sm.svg",
         "imageName": "Plug Sockets",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
-        "links": "https://www.happyhomesproject.com/search?q=electric%20bills%20&f_collectionId=634eb0385bed7c6ad51dbcda",
+        "links": "https://metro.co.uk/2022/05/02/can-switching-off-appliances-really-save-money-on-energy-bills-16568983/",
         "className": "plug"
     },
     {
         "id": 4,
-        "title": "",
-        "description": "",
-        "info": "",
+        "title": "More Money Saving Tips ",
+        "description": "Save money on water bills",
+        "info": "Click on the link for more money saving advice",
         "imageUrl": "",
         "imageName": "",
-        "copyright": "",
-        "links": "",
-        "className": ""
+        "copyright": "www.moneyhelper.org.uk",
+        "links": "https://www.moneyhelper.org.uk/en/everyday-money/budgeting/save-money-on-your-water-bill",
+        "className": "water"
     },
     {
         "id": 5,
         "title": "Light",
-        "description": "Switch to LED light bulbs",
-        "info": "Traditional bulbs waste a lot of energy. Modern LEDs are the opposite, and also last longer so are less wasteful too. Try to remember to switch lights off when you dont need them.",
+        "description": "Lighting can be less expensive",
+        "info": "Switch to LED light bulbs. Traditional bulbs waste a lot of energy. Modern LEDs are the opposite, and also last longer so are less wasteful too. Try to remember to switch lights off when you dont need them. If you replace all the bulbs in your home with LED lights, you could reduce your carbon dioxide emissions by up to 40kg (50kg in NI) a year. This is equivalent to the carbon dioxide emitted by driving your car around 145 miles.",
         "imageUrl": "../images/lights-sm.svg",
         "imageName": "Light",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
-        "links": "https://www.happyhomesproject.com/search?q=electric%20bills%20&f_collectionId=634eb0385bed7c6ad51dbcda",
+        "links": "https://energysavingtrust.org.uk/advice/lighting/",
         "className": "light"
     },
     {
@@ -81,11 +81,11 @@
         "title": "",
         "description": "",
         "info": "",
-        "imageUrl": "",
+        "imageUrl": "../images/saveMoney.jpg",
         "imageName": "",
         "copyright": "",
         "links": "",
-        "className": ""
+        "className": "saveMoney"
     },
     {
         "id": 9,
@@ -93,6 +93,7 @@
         "description": "Running a car costs on average £3,727 per annum; a cycle, however, is just £396, if not less.",
         "info": "Fuel prices are at an all-time high, representing a significant outlay for car drivers",
         "imageUrl": "../images/bike-sm.svg",
+        "imageUrltwo": "../images/getOuside.jpg",
         "imageName": "bike",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
         "links": "./Getout.js",
@@ -101,34 +102,34 @@
     {
         "id": 10,
         "title": "Tumble Dryer",
-        "description": "Turning your combi boiler flow temperature down to 60°C could save you up to £100 a year",
-        "info": "Flow temperature is the temperature of the water that your boiler sends to radiators. Reducing flow temperature is not the same as lowering your thermostat and will not noticeably reduce the temperature of your home but may increase the time it takes to reach the target temperature on your thermostat. If you are over 65, or have pre-existing health conditions, you may want to set a slightly higher flow temperature of 65°C to ensure your home warms more quickly.",
+        "description": "Tumble Dryers are expensive!",
+        "info": "There are some simple and effective ways that you can reduce your electricity bill and make your use of the tumble dryer in bad weather, more effective.  One of the best ways is not overload your machine. Good Housekeeping have a great article (link below) on many tips to help you increase the effectiveness of your use of this sometimes essential household appliance.",
         "imageUrl": "../images/washing-machine-sm.svg",
         "imageName": "Tumble-Dryer",
-        "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
-        "links": "https://www.nesta.org.uk/press-release/government-energy-saving-advice-features-money-saving-boiler-challenge-that-can-save-households-around-112-a-year/",
+        "copyright": "www.goodhousekeeping.com",
+        "links": "https://www.goodhousekeeping.com/uk/house-and-home/household-advice/a674317/how-to-make-your-tumble-dryer-more-efficient/",
         "className": "washingMachine"
     },
     {
         "id": 11,
         "title": "fridge",
-        "description": "Turning appliances off at the socket could save you up to £70 a year",
-        "info": "Almost all electrical appliances in your home, such as computers, televisions, smart devices and video game consoles, draw power continuously unless unplugged. Turn off the power switch at the socket or unplug appliances from the socket when they are not in use.",
+        "description": "Fridge / freezer - how to make these more energy efficient",
+        "info": "Make sure that your fridge is two thirds full. Not full to bursting, but not empty. Ensure that your fridge is running at the optimal temperature of 5 °C and -18 °C for freezer consumption. ",
         "imageUrl": "../images/fridge-sm.svg",
         "imageName": "fridge",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
-        "links": "https://www.happyhomesproject.com/search?q=electric%20bills%20&f_collectionId=634eb0385bed7c6ad51dbcda",
+        "links": "https://home.liebherr.com/en/mys/apac/why-liebherr/magazine/refrigerators-saving-energy.html#:~:text=It's%20all%20about%20the%20temperature,therefore%20directly%20save%20you%20money",
         "className": "fridge"
     },
     {
         "id": 12,
-        "title": "kettle",
-        "description": "Turning appliances off at the socket could save you up to £70 a year",
-        "info": "Almost all electrical appliances in your home, such as computers, televisions, smart devices and video game consoles, draw power continuously unless unplugged. Turn off the power switch at the socket or unplug appliances from the socket when they are not in use.",
+        "title": "Kettle",
+        "description": "Boiling your kettle is among the top offenders of increased energy consumption in your home",
+        "info": "Every time you boil your kettle with hardly any water, you are being charged at the full rate. Why not fill your kettle, boil the water, and then store that boiled water in a thermos flask to come back to later?  You could save over £300 from your energy bills per year by following the advice in the link. ",
         "imageUrl": "../images/kettle-sm.svg",
         "imageName": "Plug Sockets",
         "copyright": "https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/",
-        "links": "https://www.happyhomesproject.com/search?q=electric%20bills%20&f_collectionId=634eb0385bed7c6ad51dbcda",
+        "links": "https://www.nottinghampost.com/news/nottingham-news/money-saving-kettle-trick-could-6633551",
         "className": "kettle"
     }
 ]
